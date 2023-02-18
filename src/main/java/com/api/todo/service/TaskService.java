@@ -2,20 +2,18 @@ package com.api.todo.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.api.todo.model.Task;
 import com.api.todo.repository.TaskRepository;
 
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class TaskService {
 
-	@Autowired
 	private TaskRepository taskRepository;
 
 	public Task createTask(Task task) {
